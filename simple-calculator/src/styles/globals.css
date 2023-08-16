@@ -1,7 +1,11 @@
-@tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
+
 body{
-  background-color:grey
+  background-color: #a9a7a7;
+}
+button{
+  width: 6rem;
 }
