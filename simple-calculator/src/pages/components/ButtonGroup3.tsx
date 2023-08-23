@@ -6,7 +6,7 @@ import  Style  from './Calculator.module.css';
 
 export default function Buttongroup3(){
     return(
-        <ButtonGroup aria-label="outlined primary button group" className='w-1/3'>
+        <ButtonGroup aria-label="outlined primary button group" fullWidth>
             <Button variant="outlined" className={`${Style.darkGreyButton} text-slate-50`}>4</Button>
             <Button variant="outlined" className={`${Style.darkGreyButton} text-slate-50`}>5</Button>
             <Button variant="outlined" className={`${Style.darkGreyButton} text-slate-50`}>6</Button>
