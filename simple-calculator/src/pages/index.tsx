@@ -1,4 +1,4 @@
-import Calculator from './components/Calculator'
+import Calculator from './Calculator'
 import {Container} from '@mui/material'
 export default function Home() {
   return (
