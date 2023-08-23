@@ -1,8 +1,12 @@
 import {Container} from '@mui/material'
+import React, {useRef,useEffect, ReactNode} from 'react'
+type Props={
+    children:ReactNode
+}
+export default function Screen({children}:Props){
 
-export default function Screen(){
     return(
-        <Container className='h-20 bg-white w-35 p-2 m-1' fullWidth>
-        </Container>       
+        <Container className='h-20 bg-white p-2 m-1 screen' >{children}</Container>
     )
 }
+
