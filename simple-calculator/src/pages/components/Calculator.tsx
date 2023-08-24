@@ -8,26 +8,42 @@ export default function Calculator(){
   const [inputValue,setIputValue] = useState('')
   const [result,setResult] = useState('')
 
-  const operators = ['/','X','+','-','.']
+  const operators = ['/','*','+','-','.']
 
   function deleteFunction(){
-    setIputValue('')
+    if(inputValue == ''){
+      return
+    }
+    const value = inputValue.slice(0,-1)
+    setIputValue(value)
   }
 
   const setInputNumber = (value:any)=>{
+
+    if(operators.includes(value) && inputValue === ''
+      || operators.includes(value) &&
+      operators.includes(inputValue.slice(-1))){
+        return
+      }
+
     setIputValue(inputValue + value)
+    if(!operators.includes(value)){
+      setResult(eval(inputValue + value).toString())
+    }
   }
   const createNumButtons = ()=>{
     const numbers:any = []
     for(let i=1;i<10;i++){
       numbers.push(
-        <Button key={i}     sx={{
+        <Button key={i}
+        sx={{
           width: '500px',
           flex: '1 1 33.333%',
           maxWidth: '33.333%',
           fontWeight:'bold',
           fontSize:'1.3rem' 
-        }} className={`${Style.darkGreyButton} text-slate-50`} value={i.toString()} onClick={()=>setInputNumber(i)}>
+        }}
+        className={`${Style.darkGreyButton} text-slate-50`} value={i.toString()} onClick={()=>setInputNumber(i)}>
           {i}
         </Button>
       )
@@ -35,16 +51,49 @@ export default function Calculator(){
     return numbers
   }
   
+  const calculate = ()=>{
+    setInputNumber(eval(inputValue).toString())
+  }
+
   return(
     <Container className={`flex flex-col items-center justify-center`} fixed>
-      <Screen>{result ? <span>(0)</span> : ''} {inputValue || 0}</Screen>  
+      <Screen>{inputValue || 0} {result ? <span>{result}</span> : ''} </Screen>  
       
       <ButtonGroup aria-label="outlined primary button group"  fullWidth>
-        <Button variant="outlined" onClick={deleteFunction} className={`${Style.lightGreyButton} text-slate-50`}>AC</Button>
-        <Button variant="outlined"   onClick={()=>setInputNumber('+')} className={`${Style.lightGreyButton} text-slate-50`}>+</Button>
-        <Button variant="outlined"  onClick={()=>setInputNumber('-')} className={`${Style.lightGreyButton}  text-slate-50`}>-</Button>
-        <Button variant="outlined" onClick={()=>setInputNumber('/')} className={`${Style.lightGreyButton} text-slate-50`}>/</Button>
-        <Button variant="outlined" onClick={()=>setInputNumber('X')} className={`${Style.lightGreyButton} text-slate-50`}>X</Button>
+        <Button variant="outlined" onClick={deleteFunction} className={`${Style.lightGreyButton} text-slate-50`}
+        sx={{
+          fontWeight:'bold',
+          fontSize:'1.3rem' 
+        }}>
+          Delete
+        </Button>
+        <Button variant="outlined"   onClick={()=>setInputNumber('+')} className={`${Style.lightGreyButton} text-slate-50`}
+          sx={{
+            fontWeight:'bold',
+            fontSize:'1.3rem' 
+          }}>
+            +
+        </Button>
+        <Button
+          sx={{
+          fontWeight:'bold',
+          fontSize:'1.3rem' 
+        }}
+        variant="outlined"  onClick={()=>setInputNumber('-')} className={`${Style.lightGreyButton}  text-slate-50`}>
+          -
+        </Button>
+        <Button         
+          sx={{
+            fontWeight:'bold',
+            fontSize:'1.3rem' 
+          }} 
+        variant="outlined" onClick={()=>setInputNumber('/')} className={`${Style.lightGreyButton} text-slate-50`}>/</Button>
+        <Button         
+          sx={{
+            fontWeight:'bold',
+            fontSize:'1.3rem' 
+          }} 
+        variant="outlined" onClick={()=>setInputNumber('*')} className={`${Style.lightGreyButton} text-slate-50`}>X</Button>
       </ButtonGroup>    
       <ButtonGroup  aria-label="outlined primary button group" sx={{
         display:'flex',
@@ -66,7 +115,7 @@ export default function Calculator(){
             maxWidth: '33.333%', 
             fontWeight:'bold',
             fontSize:'1.3rem'
-          }} value={','} variant="outlined" onClick={()=>setInputNumber(',')}className={`${Style.darkGreyButton} text-slate-50`}>
+          }} value={','} variant="outlined" onClick={()=>setInputNumber('.')}className={`${Style.darkGreyButton} text-slate-50`}>
             ,
         </Button>
         <Button     sx={{
@@ -75,7 +124,7 @@ export default function Calculator(){
             maxWidth: '33.333%',
             fontWeight:'bold',
             fontSize:'1.3rem' 
-          }} variant="outlined" className={` ${Style.beigeButton} text-slate-50`}>=</Button>
+          }} variant="outlined" onClick={calculate} className={` ${Style.beigeButton} text-slate-50`}>=</Button>
       </ButtonGroup>
     </Container>
   )

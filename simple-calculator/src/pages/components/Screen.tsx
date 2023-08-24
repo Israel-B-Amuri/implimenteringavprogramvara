@@ -6,7 +6,7 @@ type Props={
 export default function Screen({children}:Props){
 
     return(
-        <Container className='h-20 bg-white p-2 m-1 screen align' sx={{
+        <Container className='h-20 bg-white flex flex-col p-2 m-1 screen align' sx={{
             textAlign:'right'
         }} >{children}</Container>
     )
