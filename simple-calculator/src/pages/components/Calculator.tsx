@@ -52,7 +52,8 @@ export default function Calculator(){
   }
   
   const calculate = ()=>{
-    setInputNumber(eval(inputValue).toString())
+    setIputValue(eval(inputValue).toString()) 
+    setResult('') 
   }
 
   return(
