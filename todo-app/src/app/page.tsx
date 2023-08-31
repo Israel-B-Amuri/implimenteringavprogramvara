@@ -37,11 +37,11 @@ export default function Home() {
         Todo App
       </Typography>
       <Container sx={{
-      display:'flex',
-      justifyContent:'center',
-      alignItems:'center',
-      gap:'2rem'
-    }}>
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
+          gap:'2rem'
+      }}>
         <TextField id="standard-basic" label="Write your todo here" variant="outlined" sx={{width:'50%',}} onChange={handleOnChange}/>
         <Button variant="outlined" onClick={addTodo}>Add Todo</Button>
       </Container>
