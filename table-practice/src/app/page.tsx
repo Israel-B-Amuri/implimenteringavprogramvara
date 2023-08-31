@@ -12,7 +12,7 @@ import data from '../../data.json'
 export default function Home() {      
   
   return (
-      <Container>
+      
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
@@ -42,7 +42,6 @@ export default function Home() {
             </TableBody>
           </Table>
         </TableContainer>
-        </Container>
       );
     }
   
