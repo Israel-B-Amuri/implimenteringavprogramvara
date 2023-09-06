@@ -57,7 +57,7 @@ export default function Home() {
           gap:'2rem'
         }}>
         <TextField id="standard-basic" label="Write your todo here" variant="outlined" sx={{width:'50%',}} onChange={handleOnChange}/>
-        <Button variant="contained" onClick={addTodo}><AddIcon/></Button>
+        <Button variant="contained" onClick={addTodo} sx={{width:'10%',height:'3.5rem'}}><AddIcon/></Button>
       </Container>
       <Button variant="contained" color="error" onClick={clearTodos}><DeleteIcon/></Button>
       <Container id={'todo-container'}>
