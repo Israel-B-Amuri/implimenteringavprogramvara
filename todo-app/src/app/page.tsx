@@ -10,19 +10,19 @@ import BackspaceIcon from '@mui/icons-material/Backspace';
 
 
 export default function Home() {
-  const [todo,setTodo] = useState('')
+  const [newTodo,setNewTodo] = useState('')
   const [todos,setTodos] = useLocalStorage<{ text:string; completed:boolean;}[]>('todos',[])
   
   const addTodo = () => {
 
-    if(todo.trim() !== ''){
-      setTodos([...todos, {text:todo,completed:false}])
-      setTodo('')
+    if(newTodo.trim() !== ''){
+      setTodos([...todos, {text:newTodo,completed:false}])
+      setNewTodo('')
     }
   }
 
   
-  const handleOnChange = (event:any) => setTodo(event.target.value)
+  const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => setNewTodo(event.target.value)
 
   const handleCompletedTask = (index:number)=>{
    const updatedTodos = [...todos]
@@ -31,13 +31,12 @@ export default function Home() {
   }
 
   const deleteTodo = (index: number) => {
-    const todosCopy = [...todos]
-    todosCopy.splice(index,1)
-    setTodos(todosCopy)
+    const updatedTodos = [...todos]
+    updatedTodos.splice(index,1)
+    setTodos(updatedTodos)
   }
 
   const clearTodos = ()=>{
-    const updatedTodos = [...todos]
     setTodos([])
   }
   return (
@@ -46,7 +45,8 @@ export default function Home() {
       justifyContent:'center',
       alignItems:'center',
       flexDirection:'column',
-      gap:'3rem'}}>
+      gap:'3rem'
+    }}>
       <Typography variant="h3" component="h3">
         Todo App
       </Typography>
@@ -61,11 +61,11 @@ export default function Home() {
       </Container>
       <Button variant="contained" color="error" onClick={clearTodos}><DeleteIcon/></Button>
       <Container id={'todo-container'}>
-        <List sx={{}} component="nav" aria-label="mailbox folders">
-          {todos.map((todoItem,index) =>(
-            <div key={index + todoItem.text}>
+        <List component="nav" aria-label="mailbox folders">
+          {todos.map(({text,completed},index) =>(
+            <div key={index + text}>
               <ListItem sx={{display:'flex', gap:'2rem'}}>
-                <ListItemText sx={{textDecoration: todoItem.completed ? 'line-through':'none'}} primary={todoItem.text}></ListItemText>
+                <ListItemText sx={{textDecoration: completed ? 'line-through':'none'}} primary={text}></ListItemText>
                 <Button variant='contained' sx={{backgroundColor:'steelblue'}} onClick={()=>handleCompletedTask(index)}><DoneIcon/></Button>
                 <Button onClick={() => deleteTodo(index)} variant="outlined" color='error'>
                   <BackspaceIcon/>
