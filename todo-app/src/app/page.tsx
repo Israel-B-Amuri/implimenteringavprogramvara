@@ -4,6 +4,10 @@ import Divider from '@mui/material/Divider';
 import DeleteIcon from '@mui/icons-material/Delete';
 import React, { useState} from 'react';
 import useLocalStorage from "use-local-storage";
+import AddIcon from '@mui/icons-material/Add';
+import DoneIcon from '@mui/icons-material/Done';
+import BackspaceIcon from '@mui/icons-material/Backspace';
+
 
 export default function Home() {
   const [todo,setTodo] = useState('')
@@ -32,6 +36,10 @@ export default function Home() {
     setTodos(todosCopy)
   }
 
+  const clearTodos = ()=>{
+    const updatedTodos = [...todos]
+    setTodos([])
+  }
   return (
     <Container sx={{      
       display:'flex',
@@ -49,16 +57,18 @@ export default function Home() {
           gap:'2rem'
         }}>
         <TextField id="standard-basic" label="Write your todo here" variant="outlined" sx={{width:'50%',}} onChange={handleOnChange}/>
-        <Button variant="outlined" onClick={addTodo}>Add Todo</Button>
+        <Button variant="contained" onClick={addTodo}><AddIcon/></Button>
       </Container>
+      <Button variant="contained" color="error" onClick={clearTodos}><DeleteIcon/></Button>
       <Container id={'todo-container'}>
         <List sx={{}} component="nav" aria-label="mailbox folders">
           {todos.map((todoItem,index) =>(
             <div key={index + todoItem.text}>
-              <ListItem sx={{textDecoration: todoItem.completed ? 'line-through':'none'}} onClick={()=>handleCompletedTask(index)}>
-                <ListItemText primary={todoItem.text}></ListItemText>
-                <Button onClick={() => deleteTodo(index)} variant="outlined">
-                  <DeleteIcon></DeleteIcon>
+              <ListItem sx={{display:'flex', gap:'2rem'}}>
+                <ListItemText sx={{textDecoration: todoItem.completed ? 'line-through':'none'}} primary={todoItem.text}></ListItemText>
+                <Button variant='contained' sx={{backgroundColor:'steelblue'}} onClick={()=>handleCompletedTask(index)}><DoneIcon/></Button>
+                <Button onClick={() => deleteTodo(index)} variant="outlined" color='error'>
+                  <BackspaceIcon/>
                 </Button>
               </ListItem>
               <Divider />
