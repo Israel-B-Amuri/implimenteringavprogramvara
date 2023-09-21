@@ -8,7 +8,7 @@ import BargraphElement from '@/components/Bargraph';
 ChartJS.register(  CategoryScale,  LinearScale,  BarElement,  Title,  Tooltip,  Legend);
 
 export default function CustomizedTables() {
-  const [isTableVisible,setIsTableVisible] = useState(Boolean)
+  const [isTableVisible,setIsTableVisible] = useState(true)
   const buttonStyle = {
     backgroundColor: 'rgba(53, 162, 235, 0.5)',
     color : 'white',
