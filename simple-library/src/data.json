@@ -1,0 +1,230 @@
+{
+    "top_books": [
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "year": 1960,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.W1ngiF2AkQaO78CY9yC1HQHaLd&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/To-Kill-Mockingbird-Harper-Lee/dp/0061120081",
+        "summary": "Set in the American South during the 1930s, it tells the story of Scout Finch and her father, Atticus, a lawyer who defends an innocent black man accused of raping a white woman. The novel explores themes of racism, morality, and compassion."
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Fiction",
+        "year": 1949,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.Z5KLQbybGAxlM5JdjOWeWwHaKe&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/1984-George-Orwell/dp/0451524934",
+        "summary": "A dystopian novel set in a totalitarian society where the government exercises total control over its citizens. It follows the life of Winston Smith, who rebels against the oppressive regime and seeks freedom."
+      },
+      {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Fiction",
+        "year": 1813,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.LcbvSJpi4MoOxxGoNWr1vwHaLb&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Pride-Prejudice-Dover-Thrift-Editions/dp/0486280498",
+        "summary": "A classic novel of manners and romance, it explores the complex relationship between Elizabeth Bennet and Mr. Darcy. Themes of class, marriage, and societal expectations are central to the story."
+      },
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction",
+        "year": 1925,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.ChMe2OWNozEOgdPhHksWuAHaLK&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567",
+        "summary": "Set in the Roaring Twenties, it tells the story of the enigmatic Jay Gatsby and his unrequited love for Daisy Buchanan. The novel explores the pursuit of the American Dream and the corrupting influence of wealth."
+      },
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "year": 1951,
+        "image_url": "https://tse2.mm.bing.net/th?id=OIP.h0iJZbuWxSjYiIZrHxt1-wHaLZ&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Catcher-Rye-J-D-Salinger/dp/0316769487",
+        "summary": "Narrated by Holden Caulfield, a disenchanted teenager, the novel follows his experiences in New York City. It explores themes of alienation, adolescence, and the search for authenticity."
+      },
+      {
+        "title": "To the Lighthouse",
+        "author": "Virginia Woolf",
+        "genre": "Fiction",
+        "year": 1927,
+        "image_url": "https://tse4.mm.bing.net/th?id=OIP.cLM4PHD5aAJdnZ4MYfovLgAAAA&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Lighthouse-Classic-Virginia-Woolf/dp/0156031515",
+        "summary": "A modernist novel that delves into the inner thoughts and emotions of the characters. It centers on the Ramsay family's visits to the Isle of Skye and explores the passage of time and the nature of human consciousness."
+      },
+      {
+        "title": "The Road",
+        "author": "Cormac McCarthy",
+        "genre": "Fiction",
+        "year": 2006,
+        "image_url": "https://tse2.mm.bing.net/th?id=OIP.UMK3ZnYpdWXH-8fQeQ3X6QHaLN&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Road-Cormac-McCarthy/dp/0307387895",
+        "summary": "In a post-apocalyptic world, a father and son embark on a harrowing journey to survive. The novel explores themes of love, resilience, and the human spirit in the face of extreme adversity."
+      },
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "genre": "Non-Fiction",
+        "year": 2014,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.RDSBQ7gCfUZa7tWTrKXhqAHaLo&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095",
+        "summary": "A thought-provoking exploration of the history of Homo sapiens, from the emergence of our species to the present day. It delves into the impact of culture, technology, and storytelling on our evolution."
+      },
+      {
+        "title": "Becoming",
+        "author": "Michelle Obama",
+        "genre": "Non-Fiction",
+        "year": 2018,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.Z5I6u1jq_jzJMsO2EMBS4gHaLZ&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Becoming-Michelle-Obama/dp/1524763136",
+        "summary": "The memoir of former First Lady Michelle Obama, it offers a candid and inspiring account of her life, from her childhood to her years in the White House. It explores her personal journey and advocacy."
+      },
+      {
+        "title": "Educated: A Memoir",
+        "author": "Tara Westover",
+        "genre": "Non-Fiction",
+        "year": 2018,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.hgnz4THaWJNiml-YG0DXFQHaLX&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Educated-Memoir-Tara-Westover/dp/0399590501",
+        "summary": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world through education. It explores the transformative power of knowledge."
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "year": 1937,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.Uul26pdEb0NI_9r7N1pKlAHaLi&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Hobbit-J-R-R-Tolkien/dp/0345339681",
+        "summary": "The classic fantasy novel follows the adventures of Bilbo Baggins as he joins a group of dwarves on a quest to reclaim their homeland from the dragon Smaug. It's a tale of bravery, friendship, and epic journeys."
+      },
+      {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "genre": "Mystery",
+        "year": 2003,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.W_5E6Vas_UG2ZLtXb0yoAwHaLb&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Da-Vinci-Code-Dan-Brown/dp/0307474275",
+        "summary": "A gripping mystery thriller that follows Robert Langdon, a Harvard professor, as he unravels a complex web of clues and secrets surrounding a murder in the Louvre Museum. The novel combines art, history, and conspiracy."
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Fiction",
+        "year": 1988,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.VstFlWVjoGA72T1UYfjYkwHaL9&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Alchemist-Paulo-Coelho/dp/0061122416",
+        "summary": "A philosophical novel that tells the story of Santiago, a shepherd boy on a quest to find a hidden treasure. Along his journey, he discovers wisdom and learns about the importance of following one's dreams."
+      },
+      {
+        "title": "The Shining",
+        "author": "Stephen King",
+        "genre": "Horror",
+        "year": 1977,
+        "image_url": "https://tse4.mm.bing.net/th?id=OIP.lKGP_tWOxwwxkKuupA8DYwHaMK&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Shining-Stephen-King/dp/0307743659",
+        "summary": "A psychological horror novel that follows the Torrance family as they move to the remote Overlook Hotel. As winter sets in, the hotel's supernatural forces begin to influence the family, leading to a descent into madness."
+      },
+      {
+        "title": "The Girl on the Train",
+        "author": "Paula Hawkins",
+        "genre": "Thriller",
+        "year": 2015,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.IIWrL0fwSNUJifQD6DylRgAAAA&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Girl-Train-Paula-Hawkins/dp/1594634025",
+        "summary": "A psychological thriller that weaves a suspenseful narrative through the perspectives of three women. It explores themes of obsession, deception, and the unreliable nature of memory."
+      },
+      {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "year": 1954,
+        "image_url": "https://tse2.mm.bing.net/th?id=OIP._87fOvBX6IVxTdfGx8oxXQHaLG&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Lord-Rings-J-R-R-Tolkien/dp/0544003411",
+        "summary": "An epic fantasy trilogy that follows the quest to destroy the One Ring and defeat the Dark Lord Sauron. It explores themes of heroism, friendship, and the battle between good and evil."
+      },
+      {
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "genre": "Science Fiction",
+        "year": 2008,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.1vsa56hMXIYI2aKfvx6inAAAAA&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Hunger-Games-Suzanne-Collins/dp/0439023483",
+        "summary": "In a dystopian future, Katniss Everdeen volunteers to participate in the Hunger Games, a televised fight to the death. The novel explores themes of survival, rebellion, and media manipulation."
+      },
+      {
+        "title": "The Chronicles of Narnia",
+        "author": "C.S. Lewis",
+        "genre": "Fantasy",
+        "year": 1950,
+        "image_url": "https://tse4.mm.bing.net/th?id=OIP.vhLYfLiffncrUdC3pOsLCQHaLH&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Chronicles-Narnia-Box-Set-Lewis/dp/0064471195",
+        "summary": "A series of fantasy novels set in the magical land of Narnia. The books follow the adventures of children who discover a portal to a world filled with talking animals, mythical creatures, and epic battles between good and evil."
+      },
+      {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "genre": "Science Fiction",
+        "year": 1932,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.tHFajdPzzdtyO3Q0PPTC1wAAAA&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Brave-New-World-Aldous-Huxley/dp/0060850523",
+        "summary": "A dystopian novel set in a futuristic society where people are conditioned from birth to conform to social norms. It explores themes of individuality, technology, and the cost of societal stability."
+      },
+      {
+        "title": "The Handmaid's Tale",
+        "author": "Margaret Atwood",
+        "genre": "Science Fiction",
+        "year": 1985,
+        "image_url": "https://tse4.mm.bing.net/th?id=OIP.Fzi-avi3sZKIbr44Na-yIgHaLa&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Handmaids-Tale-Margaret-Atwood/dp/038549081X",
+        "summary": "In a totalitarian society, women are forced into roles as 'handmaids' to bear children for the ruling class. The novel explores themes of gender oppression, reproductive rights, and resistance."
+      },
+      {
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "genre": "Fiction",
+        "year": 1939,
+        "image_url": "https://tse1.mm.bing.net/th?id=OIP.-Dv5ls2wE4NOL4ZMvJsZkgHaLC&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Grapes-Wrath-John-Steinbeck/dp/0142000663",
+        "summary": "John Steinbeck's 'The Grapes of Wrath' is a powerful novel that tells the story of the Joad family as they journey from the Dust Bowl of Oklahoma to California during the Great Depression. The novel explores themes of poverty, injustice, and the resilience of the human spirit. Steinbeck's vivid prose and deep empathy for his characters make this a classic of American literature."
+      },
+      {
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "genre": "Fiction",
+        "year": 1866,
+        "image_url": "https://tse4.mm.bing.net/th?id=OIP.QEgynWMtobnZyIEFeQMFsgHaLy&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Crime-Punishment-Fyodor-Dostoevsky/dp/0140449132",
+        "summary": "Fyodor Dostoevsky's 'Crime and Punishment' is a psychological thriller that delves into the mind of Raskolnikov, a poverty-stricken student who commits a murder to prove his theory of the 'extraordinary man.' The novel explores themes of guilt, redemption, and the consequences of moral transgressions. Dostoevsky's exploration of the human psyche is both gripping and thought-provoking."
+      },
+      {
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez",
+        "genre": "Magical Realism",
+        "year": 1967,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.YQLEoL3X15IhX3Rkh5H4TwAAAA&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/One-Hundred-Solitude-Harper-Perennial/dp/0060883286",
+        "summary": "Gabriel García Márquez's 'One Hundred Years of Solitude' is a masterpiece of magical realism. The novel follows the Buendía family over several generations in the fictional town of Macondo. It weaves together elements of history, mythology, and the fantastical to create a rich tapestry of Latin American storytelling. Márquez's prose is lush and lyrical, making this a landmark work of literature."
+      },
+      {
+        "title": "The Odyssey",
+        "author": "Homer",
+        "genre": "Epic Poetry",
+        "year": -800,
+        "image_url": "https://tse3.mm.bing.net/th?id=OIP.QWaMQLeQkHDg4EBNKhJicAHaK0&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/Odyssey-Homer/dp/0140268863",
+        "summary": "Homer's 'The Odyssey' is one of the earliest and greatest works of epic poetry. It tells the story of Odysseus's journey home from the Trojan War, a journey filled with mythical creatures, gods, and adventures. The poem explores themes of heroism, cunning, and the endurance of the human spirit. 'The Odyssey' is a timeless classic that continues to inspire readers and storytellers alike."
+      },
+      {
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "genre": "Historical Fiction",
+        "year": 1869,
+        "image_url": "https://tse2.mm.bing.net/th?id=OIP.fvOe9RKyO4C6nDqTvCWIagAAAA&pid=Api&P=0",
+        "amazon_url": "https://www.amazon.com/War-Peace-Leo-Tolstoy/dp/1427030200",
+        "summary": "Leo Tolstoy's 'War and Peace' is a sprawling epic that chronicles the lives of several Russian aristocratic families during the Napoleonic era. The novel delves into themes of war, love, destiny, and the human condition. Tolstoy's rich character development and philosophical musings make this a monumental work of world literature."
+      }
+    ]
+  }
+  
